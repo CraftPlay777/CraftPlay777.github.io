@@ -1,8 +1,189 @@
 <!DOCTYPE html>
-<html>
-<head><title>ola ola </title></head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0a;
+      --fg: #f0ede6;
+      --accent: #c8f24e;
+      --muted: #444;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+
+    /* Fondo con grain sutil */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 560px;
+      width: 100%;
+      text-align: left;
+      animation: fadeUp 0.8s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .tag {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      display: inline-block;
+    }
+
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.4rem, 8vw, 4rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.6rem;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: var(--muted);
+      margin-bottom: 2.4rem;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.2rem;
+      border: 1px solid #1f1f1f;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--fg);
+      background: #111;
+      transition: border-color 0.2s, background 0.2s, transform 0.2s;
+      animation: fadeUp 0.8s ease both;
+    }
+
+    .link-item:nth-child(1) { animation-delay: 0.1s; }
+    .link-item:nth-child(2) { animation-delay: 0.2s; }
+    .link-item:nth-child(3) { animation-delay: 0.3s; }
+
+    .link-item:hover {
+      border-color: var(--accent);
+      background: #161616;
+      transform: translateX(4px);
+    }
+
+    .link-left {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .link-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .link-url {
+      font-size: 0.72rem;
+      color: #666;
+    }
+
+    .arrow {
+      color: var(--accent);
+      font-size: 1.1rem;
+      transition: transform 0.2s;
+    }
+
+    .link-item:hover .arrow {
+      transform: translateX(4px);
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      margin-top: 3rem;
+      font-size: 0.72rem;
+      color: #333;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
 <body>
-  <h1>Hola, soy Juha</h1>
-  <p>Bienvenido a mi sitio:p</p>
+
+  <div class="container">
+    <span class="tag">craftplay777.github.io</span>
+    <h1>Hola, soy<br><span>Juha</span><br>real no fake.</h1>
+    <div class="divider"></div>
+
+    <div class="links">
+      <a class="link-item" href="https://github.com/CraftPlay777/" target="_blank" rel="noopener">
+        <div class="link-left">
+          <span class="link-name">GitHub</span>
+          <span class="link-url">github.com/CraftPlay777</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-item" href="https://content.luanti.org/users/juha/" target="_blank" rel="noopener">
+        <div class="link-left">
+          <span class="link-name">Contenido DB</span>
+          <span class="link-url">content.luanti.org/users/juha</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-item" href="https://youtube.com/@themtlua?si=eFeH8tm80VIwiYJv" target="_blank" rel="noopener">
+        <div class="link-left">
+          <span class="link-name">YouTube</span>
+          <span class="link-url">youtube.com/@themtlua</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>Juha · CraftPlay777</footer>
+
 </body>
-</html>
+  </html>
