@@ -182,15 +182,5 @@
     });
   });
 </script>
-  <audio id="click-sound" src="https://cdn.freesound.org/previews/678/678248_7806746-lq.mp3"></audio>
-<script>
-  const sound = document.getElementById('click-sound');
-  document.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('click', () => {
-      sound.currentTime = 0;
-      sound.play();
-    });
-  });
-</script>
 </body>
 </html>
