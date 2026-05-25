@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Proyectos — Juha's Page</title>
+  <title>Contacto — Juha's Page</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -31,18 +31,17 @@
     .sidebar a { display: block; color: #e8f4ff; text-decoration: none; font-size: 12px; padding: 5px 10px; }
     .sidebar a:hover { background: #1a3fa0; color: white; }
     .sidebar a.active { background: #1a3fa0; color: white; font-weight: bold; }
-    .content { flex: 1; padding: 14px; overflow-y: auto; }
+    .content { flex: 1; padding: 14px; }
     .profile-header { background: linear-gradient(to right, #1e5acd, #3a7ae0); color: white; padding: 10px 14px; border-radius: 3px; margin-bottom: 12px; border: 1px solid #1230a0; }
     .profile-header h1 { font-size: 18px; font-weight: bold; text-shadow: 1px 1px 2px #000a; }
     .profile-header p { font-size: 11px; color: #c8e0ff; margin-top: 2px; }
-    .section-title { font-size: 11px; font-weight: bold; color: #1e3a7a; background: linear-gradient(to right, #c8d8f8, #ece9d8); padding: 3px 8px; border: 1px solid #7a9ad8; border-radius: 2px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
-    .repo-box { display: flex; align-items: center; gap: 8px; background: white; border: 1px solid #7a9ad8; border-radius: 2px; padding: 7px 10px; margin-bottom: 5px; text-decoration: none; color: #1e3a7a; font-size: 12px; box-shadow: inset 0 1px 0 #fff, 1px 1px 2px #b0b8d0; transition: background 0.1s; }
-    .repo-box:hover { background: #dce8ff; border-color: #316ac5; }
-    .repo-box .icon { width: 28px; height: 28px; background: linear-gradient(to bottom, #4a90e2, #1e5acd); border-radius: 3px; color: white; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .repo-box .info { flex: 1; }
-    .repo-box .info strong { display: block; font-size: 12px; color: #0a2a6e; }
-    .repo-box .info span { font-size: 10px; color: #555; }
-    .repo-box .arrow { color: #316ac5; font-size: 11px; }
+    .section-title { font-size: 11px; font-weight: bold; color: #1e3a7a; background: linear-gradient(to right, #c8d8f8, #ece9d8); padding: 3px 8px; border: 1px solid #7a9ad8; border-radius: 2px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .contact-box { background: white; border: 1px solid #7a9ad8; border-radius: 2px; padding: 14px 16px; box-shadow: inset 0 1px 0 #fff, 1px 1px 2px #b0b8d0; line-height: 2; color: #1e1e1e; font-size: 12px; }
+    .contact-box .label { color: #555; font-size: 11px; }
+    .contact-box .value { font-weight: bold; color: #0a2a6e; font-size: 13px; }
+    .contact-box a.value { color: #1a5acd; text-decoration: underline; }
+    .contact-box a.value:hover { color: #0a2a6e; }
+    .divider { border: none; border-top: 1px dashed #ccc; margin: 8px 0; }
     .statusbar { background: #ece9d8; border-top: 1px solid #aca899; padding: 2px 8px; font-size: 11px; color: #444; display: flex; justify-content: space-between; }
     .statusbar-panel { border: 1px inset #aca899; padding: 0 6px; }
   </style>
@@ -51,7 +50,7 @@
 <div class="window">
   <div class="titlebar">
     <div style="font-size:14px;">🌐</div>
-    <span class="titlebar-title">Proyectos — Juha's Page — Microsoft Internet Explorer</span>
+    <span class="titlebar-title">Contacto — Juha's Page — Microsoft Internet Explorer</span>
     <div class="titlebar-btns">
       <div class="tbtn min">_</div>
       <div class="tbtn max">□</div>
@@ -65,60 +64,25 @@
         <a href="/">🏠 Inicio</a>
         <a href="/infome">👤 Sobre mí</a>
         <a href="/links">🔗 Links</a>
-        <a href="/proyectos" class="active">📁 Proyectos</a>
-        <a href="/contacto">📬 Contacto</a>
+        <a href="/proyectos">📁 Proyectos</a>
+        <a href="/contacto" class="active">📬 Contacto</a>
       </div>
       <div class="content">
         <div class="profile-header">
-          <h1>📁 Proyectos</h1>
-          <p>Mis mods y proyectos en GitHub</p>
+          <h1>📬 Contacto</h1>
+          <p>Puedes comunicarte conmigo por estos medios</p>
         </div>
-        <div class="section-title">📦 Repositorios</div>
-        <a class="repo-box" href="https://github.com/CraftPlay777/juha_nether" target="_blank">
-          <div class="icon">📦</div>
-          <div class="info"><strong>juha_nether</strong><span>Añade un nether a Minetest Game</span></div>
-          <span class="arrow">▶</span>
-        </a>
-        <a class="repo-box" href="https://github.com/CraftPlay777/juha_skin" target="_blank">
-          <div class="icon">🎨</div>
-          <div class="info"><strong>juha_skin</strong><span>Añade un selector de skins a cualquier juego de Luanti</span></div>
-          <span class="arrow">▶</span>
-        </a>
-        <a class="repo-box" href="https://github.com/CraftPlay777/juha_cords" target="_blank">
-          <div class="icon">📍</div>
-          <div class="info"><strong>juha_cords</strong><span>Añade múltiples funciones de coordenadas a Minetest Game</span></div>
-          <span class="arrow">▶</span>
-        </a>
-        <a class="repo-box" href="https://github.com/CraftPlay777/juha_kill" target="_blank">
-          <div class="icon">⚔️</div>
-          <div class="info"><strong>juha_kill</strong><span>Añade múltiples formas de matar en Minetest Game</span></div>
-          <span class="arrow">▶</span>
-        </a>
-        <a class="repo-box" href="https://github.com/CraftPlay777/juha_get" target="_blank">
-          <div class="icon">🔍</div>
-          <div class="info"><strong>juha_get</strong><span>Te permite obtener el bloque, mob o líquido que estás mirando</span></div>
-          <span class="arrow">▶</span>
-        </a>
-        <a class="repo-box" href="https://github.com/CraftPlay777/rodio" target="_blank">
-          <div class="icon">💎</div>
-          <div class="info"><strong>rodio</strong><span>Añade toda una familia de herramientas y armaduras súper poderosas de rodio</span></div>
-          <span class="arrow">▶</span>
-        </a>
-        <a class="repo-box" href="https://github.com/CraftPlay777/juha_heart" target="_blank">
-          <div class="icon">❤️</div>
-          <div class="info"><strong>juha_heart</strong><span>Te da la posibilidad de tener toda la vida de HP que quieras con un solo comando</span></div>
-          <span class="arrow">▶</span>
-        </a>
-        <a class="repo-box" href="https://github.com/CraftPlay777/juha_chat_sound" target="_blank">
-          <div class="icon">🔔</div>
-          <div class="info"><strong>juha_chat_sound</strong><span>Añade un sonido al recibir mensajes en el chat</span></div>
-          <span class="arrow">▶</span>
-        </a>
-        <a class="repo-box" href="https://github.com/CraftPlay777/juha_nightvision" target="_blank">
-          <div class="icon">🌙</div>
-          <div class="info"><strong>juha_nightvision</strong><span>Añade visión nocturna con opciones de personalización, para Minetest Game</span></div>
-          <span class="arrow">▶</span>
-        </a>
+        <div class="section-title">📨 Medios de contacto</div>
+        <div class="contact-box">
+          <div class="label">✉️ Correo electrónico</div>
+          <a class="value" href="mailto:juhaherrera@gmail.com">juhaherrera@gmail.com</a>
+          <div class="divider"></div>
+          <div class="label">📱 Número de <a href="https://zangi.com" target="_blank" style="color:#1a5acd;">Zangi</a></div>
+          <div class="value">7645970486</div>
+          <div class="divider"></div>
+          <div class="label">💬 Discord</div>
+          <div class="value">juhaxp</div>
+        </div>
       </div>
     </div>
   </div>
@@ -142,4 +106,4 @@
   setInterval(updateClock, 1000);
 </script>
 </body>
-  </html>
+</html>
